@@ -14,7 +14,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(filename, data);
+    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('File written successfully!'));
 }
 
 // function to initialize program
@@ -29,9 +29,10 @@ function init() {
         fileName = 'README.md';
         await (
             data = `
-                # ${response.projectName}
+# ${response.projectName}
         `);
-        console.log(data);
+        // console.log(data);
+        writeToFile(fileName, data);
     })
     // .then(async (response) =>
     //     fileName = "README.md",
