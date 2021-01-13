@@ -24,8 +24,8 @@ function init() {
     .prompt(
         questions
     )
-    .then((response) => {
-        console.log(`${response.projectName}`);
+    .then(async (response) => {
+        await console.log(`${response.projectName}`);
     })
     // .then(async (response) =>
     //     fileName = "README.md",
