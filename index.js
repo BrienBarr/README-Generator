@@ -25,7 +25,13 @@ function init() {
         questions
     )
     .then(async (response) => {
-        await console.log(`${response.projectName}`);
+        // await console.log(`${response.projectName}`);
+        fileName = 'README.md';
+        await (
+            data = `
+                # ${response.projectName}
+        `);
+        console.log(data);
     })
     // .then(async (response) =>
     //     fileName = "README.md",
