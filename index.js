@@ -8,8 +8,12 @@ const questions = [
         type: 'input',
         message: 'What is the name of your project?',
         name: 'projectName'
+    },
+    {
+        type: 'input',
+        message: 'Write a description of your project',
+        name: 'description'
     }
-
 ];
 
 // function to write README file
@@ -28,10 +32,13 @@ function init() {
         // await console.log(`${response.projectName}`);
         fileName = 'README.md';
         await (
-            data = `
-# ${response.projectName}
+            data = `# ${response.projectName}
+            
+## Description
+
+${response.description}
         `);
-        // console.log(data);
+        await (data=data.replace("\t", ""));
         writeToFile(fileName, data);
     })
     // .then(async (response) =>
