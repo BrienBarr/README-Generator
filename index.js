@@ -46,7 +46,8 @@ const questions = [
             "Eclipse Public License",
             "GPL",
             "LGPL",
-            "Mozilla Public License 2.0"
+            "Mozilla Public License 2.0",
+            new inquirer.Separator( "-- End of List --" )
         ],
         name: 'license'
     },
