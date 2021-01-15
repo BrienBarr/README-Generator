@@ -8,22 +8,22 @@ function generateMarkdown(data) {
 ${data.description}
 
 
-## Installation Instructions
+## Installation
 
 ${data.installation}
 
 
-## Usage Information
+## Usage
 
 ${data.usage}
 
 
-## Contribution Guidelines
+## Contributing
 
 ${data.contribution}
 
 
-## Test Instructions
+## Tests
 
 ${data.testInstructions}
 `;
