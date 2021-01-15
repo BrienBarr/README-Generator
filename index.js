@@ -19,6 +19,11 @@ const questions = [
         message: 'How do you install this project?',
         name: 'installation'
     },
+    {
+        type: 'input',
+        message: 'What is the usage information for this project?',
+        name: 'usage'
+    },
 ];
 
 // function to write README file
