@@ -34,6 +34,22 @@ const questions = [
         message: 'What are the test instructions for this project?',
         name: 'testInstructions'
     },
+    {
+        type: 'list',
+        choices: [
+            "MIT license",
+            "Apache License 2.0",
+            "BSD 3-Clause",
+            "BSD 2-Clause",
+            "Common Development and Distribution License",
+            "Creative Commons License",
+            "Eclipse Public License",
+            "GPL",
+            "LGPL",
+            "Mozilla Public License 2.0"
+        ],
+        name: 'license'
+    },
 ];
 
 // function to write README file

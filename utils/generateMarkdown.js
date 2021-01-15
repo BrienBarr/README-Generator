@@ -26,6 +26,11 @@ ${data.contribution}
 ## Tests
 
 ${data.testInstructions}
+
+
+## License
+
+${data.license}
 `;
 }
 
