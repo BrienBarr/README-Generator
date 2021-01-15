@@ -7,13 +7,18 @@ const questions = [
     {
         type: 'input',
         message: 'What is the name of your project?',
-        name: 'projectName'
+        name: 'title'
     },
     {
         type: 'input',
-        message: 'Write a description of your project',
+        message: 'Write a description of your project:',
         name: 'description'
-    }
+    },
+    {
+        type: 'input',
+        message: 'How do you install this project?',
+        name: 'installation'
+    },
 ];
 
 // function to write README file
@@ -23,31 +28,15 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    // console.log(questions);
+
     inquirer
     .prompt(
         questions
     )
-    .then(async (response) => {
-        // await console.log(`${response.projectName}`);
+    .then((data) => {
         fileName = 'README.md';
-        await (
-            data = `# ${response.projectName}
-            
-## Description
-
-${response.description}
-        `);
-        await (data=data.replace("\t", ""));
-        writeToFile(fileName, data);
+        writeToFile(fileName, generateMarkdown(data));
     })
-    // .then(async (response) =>
-    //     fileName = "README.md",
-    //     data = `
-    //         # ${response.projectName}
-    //     `,
-    //     await (writeToFile(fileName, data)),
-    // )
 }
 
 // function call to initialize program
