@@ -41,7 +41,8 @@ function generateMarkdown(data) {
 
 
 ${licenseBadge}
-
+<br/>
+<br/>
 
 ## Table of Contents
 
@@ -51,41 +52,50 @@ ${licenseBadge}
 4. [Contributing](##Contributing)  
 5. [Tests](##Tests)
 6. [License](##License)
-
+7. [Questions](##Questions)
+<br/>
+<br/>
 
 ## Description
 
 ${data.description}
-
+<br/>
+<br/>
 
 ## Installation
 
 ${data.installation}
-
+<br/>
+<br/>
 
 ## Usage
 
 ${data.usage}
-
+<br/>
+<br/>
 
 ## Contributing
 
 ${data.contribution}
-
+<br/>
+<br/>
 
 ## Tests
 
 ${data.testInstructions}
-
+<br/>
+<br/>
 
 ## License
 
 ${data.license}
-
+<br/>
+<br/>
 
 ## Questions
 
-[GitHub/${data.github}](https://github.com/${data.github})
+[GitHub/${data.github}](https://github.com/${data.github})<br/>
+For additional questions, e-mail me at: [${data.email}](mailto:${data.email})
 `;
 }
 
