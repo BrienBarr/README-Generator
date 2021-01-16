@@ -51,6 +51,11 @@ const questions = [
         ],
         name: 'license'
     },
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'github'
+    }
 ];
 
 // function to write README file

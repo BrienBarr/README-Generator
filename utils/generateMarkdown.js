@@ -1,6 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(data.license);
+
   let licenseBadge = "";
   switch (data.license){
     case "MIT license": 
@@ -36,6 +36,7 @@ function generateMarkdown(data) {
     default:
       licenseBadge = "license badge";
   }
+
   return `# ${data.title}
 
 
@@ -80,6 +81,11 @@ ${data.testInstructions}
 ## License
 
 ${data.license}
+
+
+## Questions
+
+[GitHub/${data.github}](https://github.com/${data.github})
 `;
 }
 
