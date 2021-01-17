@@ -1,6 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
 
+  // Set the appropriate license badge according to the license type chosen by the user
   let licenseBadge = "";
   switch (data.license){
     case "MIT license": 
@@ -37,6 +38,7 @@ function generateMarkdown(data) {
       licenseBadge = "";
   }
 
+  // Return the actual data for the README file in the markdown format
   return `# ${data.title}
 
 
