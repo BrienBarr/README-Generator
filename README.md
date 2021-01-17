@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-1. [Description](##Description)
+1. [Description](## Description)
 2. [Installation](##Installation)
 3. [Usage](##Usage)
 4. [Screencaps](##Screencaps)
