@@ -33,6 +33,25 @@ After running the "node index.js" command to run the app, answer the user prompt
 
 ## Screencaps
 
+<br/>
+Starting the app from the command-line<br/>
+
+![Command-line Start](./img/cmd-line_start.png)
+
+<br/>
+Return message after answering all command-line prompts<br/>
+
+![Command-line Done](./img/cmd-line_done.png)
+
+<br/>
+Generated markdown file<br/>
+
+![Markdown file](./img/readme-md.png)
+
+<br/>
+Rendered markdown file<br/>
+
+![Markdown render](./img/readme-preview.png)
 
 <br/>
 <br/>
