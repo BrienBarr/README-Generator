@@ -4,12 +4,12 @@
 
 ## Table of Contents
 
-1. [Description](./##Description)
-2. [Installation](##Installation)
-3. [Usage](##Usage)
-4. [Screencaps](##Screencaps)
-5. [Walk thru Video](##Walk%20thru%20Video)
-6. [Questions](##Questions)
+1. [Description](#Description)
+2. [Installation](#Installation)
+3. [Usage](#Usage)
+4. [Screencaps](#Screencaps)
+5. [Walk thru Video](#Walk-thru-Video)
+6. [Questions](#Questions)
 <br/>
 <br/>
 
